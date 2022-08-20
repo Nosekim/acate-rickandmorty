@@ -14,12 +14,11 @@ export default function CharacterDetails({
   setShowModal,
   characterDetails,
 }: ModalProps) {
-  console.log(characterDetails);
   return (
     <Modal
       animationType="slide"
       visible={showModal}
-      onRequestClose={() => setShowModal(!showModal)}
+      onRequestClose={setShowModal}
     >
       <View
         style={{
@@ -30,13 +29,8 @@ export default function CharacterDetails({
         }}
       >
         <Text style={styles.text}>SELECIONADO:</Text>
-        <Text style={styles.textName}>
-          {characterDetails != undefined ? characterDetails[0].name : null}
-        </Text>
-        <Pressable
-          style={styles.buttonClose}
-          onPress={() => setShowModal(!showModal)}
-        >
+        <Text style={styles.textName}>{characterDetails.name}</Text>
+        <Pressable style={styles.buttonClose} onPress={setShowModal}>
           <Text style={styles.text}>fechar</Text>
         </Pressable>
       </View>

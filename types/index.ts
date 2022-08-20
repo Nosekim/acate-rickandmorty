@@ -8,7 +8,7 @@ export interface ICharacter {
 
 export interface ModalProps {
   showModal: boolean;
-  setShowModal: (showModal: boolean) => void;
+  setShowModal: () => void;
   characterDetails: any;
 }
 

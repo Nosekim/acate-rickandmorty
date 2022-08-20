@@ -5,3 +5,10 @@ export interface ICharacter {
   gender: string;
   image: string;
 }
+
+export interface ModalProps {
+  showModal: boolean;
+  setShowModal: (showModal: boolean) => void;
+  characterDetails: any;
+}
+

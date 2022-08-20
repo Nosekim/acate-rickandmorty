@@ -32,11 +32,11 @@ Meu nome é Roger Felipe, sou desenvolvedor Fullstack Javascript/Typescript, já
 
 - Clone o projeto:
 ```
-git clone https://github.com/Nosekim/curso-architecture-node-ts-graphql-manguinho.git
+git clone https://github.com/Nosekim/acate-rickandmorty.git
 ```
 - Navegue para dentro da pasta do projeto após clonado
 ```
-cd curso-architecture-node-ts-graphql-manguinho
+cd acate-rickandmorty
 ```
 - Instale as dependências do projeto
 
@@ -48,11 +48,8 @@ cd curso-architecture-node-ts-graphql-manguinho
 
 |         yarn              |      npm         |
 |--------------------------|----------------------|
-|```yarn start:dev``` |```npm run start:dev``` |
+|```yarn start``` |```npm run start``` |
 
 
 ## TODO:
-
-- [ ] TDD
-- [ ] Tests E2E
-- [ ] Criar diagrama/fluxograma para melhorar o entendimento do curso
+- [ ] Criar um modal para mostrar os dados do personagem selecionado.
